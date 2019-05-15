@@ -2,6 +2,7 @@
 <packageDescription id="hf9rx6je" jpegQuality="80" compressPNG="true">
   <resources>
     <image id="pa1u0" name="1.jpg" path="/"/>
+    <component id="pa1u2" name="Bg.xml" path="/"/>
   </resources>
   <publish name=""/>
 </packageDescription>
