@@ -17,6 +17,7 @@
     <image id="lh7lg" name="0009_0-_png.png" path="/"/>
     <image id="lh7lh" name="0000_9_png.png" path="/"/>
     <image id="lh7li" name="0001_8_png.png" path="/"/>
+    <component id="mi3sj" name="Component1.xml" path="/"/>
   </resources>
   <publish name=""/>
 </packageDescription>

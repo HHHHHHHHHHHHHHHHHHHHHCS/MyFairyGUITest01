@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1920,1080">
+  <controller name="c1" pages="" selected="-1"/>
+  <controller name="c2" alias="gouzi" pages="" selected="-1"/>
   <displayList>
-    <image id="n1_pa1u" name="n1" src="pa1u0" fileName="1.jpg" xy="455,74"/>
-    <loader id="n2_c73j" name="n2" xy="918,477" size="50,50"/>
-    <list id="n3_c73j" name="n3" xy="657,276" size="200,300" overflow="scroll"/>
-    <graph id="n4_lh7l" name="n4" xy="104,236" size="100,100" type="rect"/>
-    <image id="n5_lh7l" name="n5" src="pa1u0" fileName="1.jpg" xy="19,479" fillMethod="hz" fillAmount="50"/>
-    <movieclip id="n6_lh7l" name="n6" src="lh7l3" fileName="MovieClip1.jta" xy="442,451"/>
-    <movieclip id="n7_lh7l" name="n7" src="lh7l7" fileName="timg.jta" xy="569,585"/>
-    <text id="n8_lh7l" name="n8" xy="276,418" size="136,83" input="true" fontSize="12" autoSize="none" text="asdasdasd"/>
-    <text id="n9_lh7l" name="n9" xy="270,150" size="48,19" fontSize="12" ubb="true" text="[b][color=#ff00ff]aasdas[/color][/b]"/>
-    <text id="n10_lh7l" name="n10" xy="254,260" size="304,50" font="ui://hf9rx6jelh7l8" fontSize="12" ubb="true" text="123456"/>
+    <text id="n12_nkz0" name="n12" xy="573,447" size="868,50" font="ui://hf9rx6jelh7l8" fontSize="12" text="100000000000000000000000">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n13_nkz0" name="n13" src="pa1u0" fileName="1.jpg" xy="346,345">
+      <relation target="n12_nkz0" sidePair="left-left"/>
+    </image>
+    <loader id="n14_mi3s" name="n14" xy="571,137" size="50,50" url="ui://hf9rx6jepa1u0"/>
   </displayList>
 </component>

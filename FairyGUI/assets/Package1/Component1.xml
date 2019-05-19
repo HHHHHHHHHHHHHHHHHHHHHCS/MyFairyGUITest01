@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <controller name="c1" alias="2333" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_mi3s" name="n0" src="pa1u0" fileName="1.jpg" xy="294,110" pivot="0.5,0.5">
+      <gearXY controller="c1" pages="0,1" values="294,110|1321,151" tween="true"/>
+    </image>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Rotation" target="n0_mi3s" tween="true" startValue="0" endValue="62" duration="18"/>
+    <item time="0" type="XY" target="n0_mi3s" value="1413.96,601.8"/>
+    <item time="0" type="XY" target="n0_mi3s" tween="true" startValue="276.07,209.81" endValue="1413.96,601.8" duration="13"/>
+  </transition>
+</component>

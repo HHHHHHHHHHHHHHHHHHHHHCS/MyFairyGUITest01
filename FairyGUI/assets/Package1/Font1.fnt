@@ -1,11 +1,10 @@
 info creator=UIBuilder
-common xadvance=40
 char id=57 img=lh7lh xoffset=0 yoffset=0 xadvance=0
 char id=56 img=lh7li xoffset=0 yoffset=0 xadvance=0
 char id=55 img=lh7l9 xoffset=0 yoffset=0 xadvance=0
 char id=54 img=lh7la xoffset=0 yoffset=0 xadvance=0
 char id=53 img=lh7lb xoffset=0 yoffset=0 xadvance=0
-char id=52 img=lh7lc xoffset=0 yoffset=0 xadvance=100
+char id=52 img=lh7lc xoffset=0 yoffset=0 xadvance=0
 char id=51 img=lh7ld xoffset=0 yoffset=0 xadvance=0
 char id=50 img=lh7le xoffset=0 yoffset=0 xadvance=0
 char id=49 img=lh7lf xoffset=0 yoffset=0 xadvance=0
