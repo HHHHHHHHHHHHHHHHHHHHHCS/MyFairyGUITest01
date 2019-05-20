@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" designImageLayer="1">
+  <controller name="c1" alias="2333" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n2_o52l" name="n2" src="o52lo" fileName="Button1.xml" xy="688,302"/>
+    <list id="n3_o52l" name="n3" xy="1093,302" size="200,300" overflow="scroll" scrollBarRes="ui://hf9rx6jeo52lw,">
+      <item url="ui://hf9rx6jepa1u0"/>
+      <item url="ui://hf9rx6jeo52lk"/>
+      <item url="ui://hf9rx6jeo52ll"/>
+      <item url="ui://hf9rx6jeo52lm"/>
+      <item url="ui://hf9rx6jeo52ln"/>
+      <item url="ui://hf9rx6jelh7lh"/>
+    </list>
+    <component id="n4_o52l" name="n4" src="o52lp" fileName="ProgressBar1.xml" xy="661,122">
+      <ProgressBar value="35" max="100"/>
+    </component>
+    <component id="n5_o52l" name="n5" src="o52lr" fileName="Slider1.xml" xy="201,235" size="173,561">
+      <Slider value="50" max="100"/>
+    </component>
+    <image id="n6_o52l" name="n6" src="o52lm" fileName="b4.png" xy="723,681" size="705,171" fillMethod="hz"/>
+  </displayList>
+  <transition name="t0"/>
+</component>

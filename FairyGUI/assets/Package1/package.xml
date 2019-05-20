@@ -2,7 +2,7 @@
 <packageDescription id="hf9rx6je" jpegQuality="80" compressPNG="true">
   <resources>
     <image id="pa1u0" name="1.jpg" path="/" scale9grid="53,46,57,122"/>
-    <component id="pa1u2" name="Bg.xml" path="/"/>
+    <component id="pa1u2" name="Bg0.xml" path="/"/>
     <movieclip id="lh7l3" name="MovieClip1.jta" path="/"/>
     <image id="lh7l5" name="Anim.jpg" path="/"/>
     <movieclip id="lh7l7" name="timg.jta" path="/"/>
@@ -17,7 +17,20 @@
     <image id="lh7lg" name="0009_0-_png.png" path="/"/>
     <image id="lh7lh" name="0000_9_png.png" path="/"/>
     <image id="lh7li" name="0001_8_png.png" path="/"/>
-    <component id="mi3sj" name="Component1.xml" path="/"/>
+    <component id="mi3sj" name="Bg1.xml" path="/"/>
+    <image id="o52lk" name="2.png" path="/"/>
+    <image id="o52ll" name="3.png" path="/"/>
+    <image id="o52lm" name="b4.png" path="/" scale="9grid" scale9grid="44,19,88,38"/>
+    <image id="o52ln" name="b5.png" path="/" scale="9grid" scale9grid="41,18,82,36"/>
+    <component id="o52lo" name="Button1.xml" path="/"/>
+    <component id="o52lp" name="ProgressBar1.xml" path="/"/>
+    <component id="o52lq" name="Slider1_grip.xml" path="/"/>
+    <component id="o52lr" name="Slider1.xml" path="/"/>
+    <component id="o52ls" name="Bg2.xml" path="/"/>
+    <component id="o52lt" name="ScrollBar1_arrow1.xml" path="/"/>
+    <component id="o52lu" name="ScrollBar1_arrow2.xml" path="/"/>
+    <component id="o52lv" name="ScrollBar1_grip.xml" path="/"/>
+    <component id="o52lw" name="ScrollBar1.xml" path="/" exported="true"/>
   </resources>
   <publish name=""/>
 </packageDescription>

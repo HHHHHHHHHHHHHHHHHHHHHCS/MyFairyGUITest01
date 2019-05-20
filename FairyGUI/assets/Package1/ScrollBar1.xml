@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="17,200" extention="ScrollBar">
+  <displayList>
+    <graph id="n0_o52l" name="n0" xy="0,0" size="17,200" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_o52l" name="bar" xy="0,20" size="17,160">
+      <relation target="" sidePair="height-height"/>
+    </graph>
+    <component id="n2_o52l" name="arrow1" src="o52lt" fileName="ScrollBar1_arrow1.xml" xy="0,0"/>
+    <component id="n3_o52l" name="arrow2" src="o52lu" fileName="ScrollBar1_arrow2.xml" xy="0,180">
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n4_o52l" name="grip" src="o52lv" fileName="ScrollBar1_grip.xml" xy="0,20"/>
+  </displayList>
+  <ScrollBar fixedGripSize="true"/>
+</component>

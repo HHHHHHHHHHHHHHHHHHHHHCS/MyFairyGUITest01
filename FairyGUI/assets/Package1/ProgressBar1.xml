@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="173,74" extention="ProgressBar" remark="123123">
+  <displayList>
+    <image id="n0_o52l" name="n0" src="o52ln" fileName="b5.png" xy="0,0" size="300,90">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_o52l" name="bar" src="o52lm" fileName="b4.png" xy="10,5" size="280,80" color="#ff0000" fillMethod="hz"/>
+  </displayList>
+  <ProgressBar/>
+</component>
