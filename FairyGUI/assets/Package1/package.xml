@@ -31,6 +31,12 @@
     <component id="o52lu" name="ScrollBar1_arrow2.xml" path="/"/>
     <component id="o52lv" name="ScrollBar1_grip.xml" path="/"/>
     <component id="o52lw" name="ScrollBar1.xml" path="/" exported="true"/>
+    <component id="jxvyx" name="Bg3.xml" path="/" exported="true"/>
+    <component id="jxvyy" name="Button2.xml" path="/"/>
+    <component id="jxvyz" name="ComboBox1_item.xml" path="/"/>
+    <component id="jxvy10" name="ComboBox1_popup.xml" path="/"/>
+    <component id="jxvy11" name="ComboBox1.xml" path="/" exported="true"/>
+    <component id="jxvy12" name="ProgressBar2.xml" path="/"/>
   </resources>
-  <publish name=""/>
+  <publish name="Package1"/>
 </packageDescription>
