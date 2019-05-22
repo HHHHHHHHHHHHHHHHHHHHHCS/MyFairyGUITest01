@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
 
-public class FairyGUITest02 : MonoBehaviour
+public class ScriptLoadPackage : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

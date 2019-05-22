@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="9u8bdn1z" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="l6v90" name="2.png" path="/"/>
+    <image id="l6v91" name="3.png" path="/"/>
+    <image id="l6v92" name="b4.png" path="/"/>
+    <image id="l6v93" name="b5.png" path="/"/>
+    <sound id="l6v94" name="BUZZ4.wav" path="/"/>
+    <component id="l6v95" name="Boss.xml" path="/" exported="true"/>
+    <component id="l6v96" name="Button1.xml" path="/"/>
+    <component id="l6v97" name="Bg1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Package2"/>
+</packageDescription>

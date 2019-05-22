@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <displayList>
+    <image id="n2_l6v9" name="n2" src="l6v90" fileName="2.png" xy="-287,0"/>
+    <image id="n3_l6v9" name="n3" src="l6v91" fileName="3.png" xy="1930,947"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="XY" target="n2_l6v9" tween="true" startValue="-287.43,0.76" endValue="1641,0" duration="6"/>
+    <item time="0" type="XY" target="n3_l6v9" tween="true" startValue="1930.8,947.07" endValue="0,947" duration="6"/>
+    <item time="6" type="XY" target="n2_l6v9" tween="true" startValue="1641,0" endValue="1641,0" duration="18"/>
+    <item time="6" type="XY" target="n3_l6v9" tween="true" startValue="0,947" endValue="0,947" duration="18"/>
+    <item time="24" type="XY" target="n2_l6v9" tween="true" startValue="1641,0" endValue="1959,0" duration="6"/>
+    <item time="24" type="XY" target="n3_l6v9" tween="true" startValue="0,947" endValue="-420,947" duration="6"/>
+  </transition>
+</component>
