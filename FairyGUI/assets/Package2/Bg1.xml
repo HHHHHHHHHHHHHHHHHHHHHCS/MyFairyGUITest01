@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1920,1080">
   <displayList>
-    <component id="n0_l6v9" name="n0" src="l6v96" fileName="Button1.xml" xy="893,518"/>
-    <text id="n1_l6v9" name="n1" xy="945,538" size="58,31" fontSize="24" color="#ffff00" align="center" vAlign="middle" text="Boss">
+    <component id="n0_l6v9" name="n0" src="l6v96" fileName="Button1.xml" xy="893,518" group="n2_gt1f"/>
+    <text id="n1_l6v9" name="n1" xy="945,538" size="58,31" group="n2_gt1f" fontSize="24" color="#ffff00" align="center" vAlign="middle" text="Boss">
       <relation target="n0_l6v9" sidePair="center-center,middle-middle"/>
     </text>
+    <group id="n2_gt1f" name="n2" xy="893,518" size="163,69" advanced="true"/>
   </displayList>
 </component>

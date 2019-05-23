@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="eyskzlme" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="gt1f0" name="power.png" path="/"/>
+    <image id="gt1f1" name="red.png" path="/"/>
+    <image id="gt1f2" name="h0.png" path="/AttackValue/"/>
+    <image id="gt1f3" name="h1.png" path="/AttackValue/"/>
+    <image id="gt1f4" name="h2.png" path="/AttackValue/"/>
+    <image id="gt1f5" name="h3.png" path="/AttackValue/"/>
+    <image id="gt1f6" name="h4.png" path="/AttackValue/"/>
+    <image id="gt1f7" name="h5.png" path="/AttackValue/"/>
+    <image id="gt1f8" name="h6.png" path="/AttackValue/"/>
+    <image id="gt1f9" name="h7.png" path="/AttackValue/"/>
+    <image id="gt1fa" name="h8.png" path="/AttackValue/"/>
+    <image id="gt1fb" name="h9.png" path="/AttackValue/"/>
+    <image id="gt1fc" name="0000_+.png" path="/AddValue/"/>
+    <image id="gt1fd" name="0001_9.png" path="/AddValue/"/>
+    <image id="gt1fe" name="0002_8.png" path="/AddValue/"/>
+    <image id="gt1ff" name="0003_7.png" path="/AddValue/"/>
+    <image id="gt1fg" name="0004_6.png" path="/AddValue/"/>
+    <image id="gt1fh" name="0005_5.png" path="/AddValue/"/>
+    <image id="gt1fi" name="0006_4.png" path="/AddValue/"/>
+    <image id="gt1fj" name="0007_3.png" path="/AddValue/"/>
+    <image id="gt1fk" name="0008_2.png" path="/AddValue/"/>
+    <image id="gt1fl" name="0009_1.png" path="/AddValue/"/>
+    <image id="gt1fm" name="0010_0.png" path="/AddValue/"/>
+    <image id="gt1fn" name="100000.png" path="/Fire/"/>
+    <image id="gt1fo" name="100001.png" path="/Fire/"/>
+    <image id="gt1fp" name="100002.png" path="/Fire/"/>
+    <image id="gt1fq" name="100003.png" path="/Fire/"/>
+    <image id="gt1fr" name="100004.png" path="/Fire/"/>
+    <image id="gt1fs" name="100005.png" path="/Fire/"/>
+    <image id="gt1ft" name="100006.png" path="/Fire/"/>
+    <image id="gt1fu" name="100007.png" path="/Fire/"/>
+    <image id="gt1fv" name="100008.png" path="/Fire/"/>
+    <image id="gt1fw" name="100009.png" path="/Fire/"/>
+    <image id="gt1fx" name="100010.png" path="/Fire/"/>
+    <image id="gt1fy" name="100011.png" path="/Fire/"/>
+    <image id="gt1fz" name="100012.png" path="/Fire/"/>
+    <image id="gt1f10" name="100013.png" path="/Fire/"/>
+    <image id="gt1f11" name="100014.png" path="/Fire/"/>
+    <image id="gt1f12" name="100015.png" path="/Fire/"/>
+    <image id="gt1f13" name="100016.png" path="/Fire/"/>
+    <image id="gt1f14" name="100017.png" path="/Fire/"/>
+    <image id="gt1f15" name="100018.png" path="/Fire/"/>
+    <image id="gt1f16" name="100019.png" path="/Fire/"/>
+    <image id="gt1f17" name="100020.png" path="/Fire/"/>
+    <image id="gt1f18" name="100021.png" path="/Fire/"/>
+    <image id="gt1f19" name="100022.png" path="/Fire/"/>
+    <image id="gt1f1a" name="100023.png" path="/Fire/"/>
+    <image id="gt1f1b" name="100024.png" path="/Fire/"/>
+    <image id="gt1f1c" name="100025.png" path="/Fire/"/>
+    <image id="gt1f1d" name="100026.png" path="/Fire/"/>
+    <image id="gt1f1e" name="100027.png" path="/Fire/"/>
+    <image id="gt1f1f" name="100028.png" path="/Fire/"/>
+    <image id="gt1f1g" name="100029.png" path="/Fire/"/>
+    <image id="gt1f1h" name="100030.png" path="/Fire/"/>
+    <image id="gt1f1i" name="100031.png" path="/Fire/"/>
+    <font id="gt1f1j" name="AddValueFont.fnt" path="/AddValue/" exported="true"/>
+    <font id="gt1f1k" name="AttackValueFont.fnt" path="/AttackValue/" exported="true"/>
+    <movieclip id="gt1f1l" name="FireAnim.jta" path="/Fire/"/>
+    <component id="gt1f1m" name="Bg1.xml" path="/"/>
+  </resources>
+  <publish name="Package3"/>
+</packageDescription>
