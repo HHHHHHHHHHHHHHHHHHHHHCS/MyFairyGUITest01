@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="l7cygefg" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="kntu0" name="Guide.xml" path="/" exported="true"/>
+    <image id="kntu1" name="btnimage.png" path="/"/>
+    <movieclip id="kntu2" name="quan.jta" path="/"/>
+    <movieclip id="kntu3" name="rswcfhd.jta" path="/"/>
+    <component id="kntu4" name="Backpack.xml" path="/"/>
+  </resources>
+  <publish name="Package4"/>
+</packageDescription>

@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1920,1080">
   <displayList>
-    <image id="n0_gt1f" name="n0" src="gt1f1" fileName="red.png" xy="-469,984" group="n6_gt1f"/>
-    <image id="n1_gt1f" name="n1" src="gt1f0" fileName="power.png" xy="-447,991" group="n6_gt1f"/>
-    <text id="n2_gt1f" name="n2" xy="-294,998" size="211,52" group="n6_gt1f" font="ui://eyskzlmegt1f1k" fontSize="30" vAlign="middle" letterSpacing="-14" autoSize="none" text="10000"/>
-    <movieclip id="n4_gt1f" name="n4" src="gt1f1l" fileName="Fire/FireAnim.jta" xy="-106,939" pivot="0.5,0.8" size="64,128" group="n6_gt1f" alpha="0"/>
-    <text id="n5_gt1f" name="n5" xy="-332,949" size="144,40" group="n6_gt1f" font="ui://eyskzlmegt1f1j" fontSize="12" text="+2000&#xA;"/>
-    <group id="n6_gt1f" name="n6" xy="-469,939" size="462,128" advanced="true"/>
+    <component id="n0_kntu" name="n0" src="kntu1q" fileName="Play.xml" xy="960,540" pivot="0.5,0.5" anchor="true"/>
   </displayList>
-  <transition name="t0">
-    <item time="0" type="Alpha" target="n4_gt1f" tween="true" startValue="0" endValue="1" duration="6"/>
-    <item time="0" type="XY" target="n6_gt1f" tween="true" startValue="-469,941" endValue="78,941" duration="6"/>
-    <item time="6" type="Size" target="n4_gt1f" tween="true" startValue="64,128" endValue="96,256" duration="6"/>
-    <item time="6" type="XY" target="n6_gt1f" tween="true" startValue="78,941" endValue="971,941" duration="12"/>
-    <item time="12" type="Size" target="n4_gt1f" tween="true" startValue="96,256" endValue="64,128" duration="6"/>
-    <item time="18" type="Alpha" target="n6_gt1f" tween="true" startValue="1" endValue="0" duration="6"/>
-    <item time="18" type="XY" target="n6_gt1f" tween="true" startValue="971,941" endValue="1248.92,743.93" duration="6"/>
-  </transition>
 </component>

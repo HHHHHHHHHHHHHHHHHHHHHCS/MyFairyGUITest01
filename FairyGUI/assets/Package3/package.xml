@@ -59,7 +59,11 @@
     <font id="gt1f1j" name="AddValueFont.fnt" path="/AddValue/" exported="true"/>
     <font id="gt1f1k" name="AttackValueFont.fnt" path="/AttackValue/" exported="true"/>
     <movieclip id="gt1f1l" name="FireAnim.jta" path="/Fire/"/>
-    <component id="gt1f1m" name="Bg1.xml" path="/"/>
+    <component id="gt1f1m" name="AddValue.xml" path="/" exported="true"/>
+    <component id="kntu1n" name="Bg1.xml" path="/" exported="true"/>
+    <image id="kntu1o" name="b4.png" path="/"/>
+    <image id="kntu1p" name="b5.png" path="/"/>
+    <component id="kntu1q" name="Play.xml" path="/"/>
   </resources>
   <publish name="Package3"/>
 </packageDescription>
