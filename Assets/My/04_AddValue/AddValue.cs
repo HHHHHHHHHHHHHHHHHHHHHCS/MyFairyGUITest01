@@ -15,7 +15,7 @@ public class AddValue : MonoBehaviour
     private void Start()
     {
         mainUI = GetComponent<UIPanel>().ui;
-        addValueCom = UIPackage.CreateObject("Package3", "AddValue").asCom;
+        addValueCom = UIPackage.CreateObject("03_AddValue", "AddValue").asCom;
         addValueCom.GetTransition("t0").SetHook("AddValue", AddAttackValue);
         mainUI.GetChild("n0").onClick.Add(PlayAddValue);
     }

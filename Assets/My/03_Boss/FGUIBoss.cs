@@ -13,7 +13,7 @@ public class FGUIBoss : MonoBehaviour
     {
         mainUI = GetComponent<UIPanel>().ui;
         group = mainUI.GetChild("n2").asGroup;
-        bossCom = UIPackage.CreateObject("Package2", "Boss").asCom;
+        bossCom = UIPackage.CreateObject("02_Boss", "Boss").asCom;
         mainUI.GetChild("n0").onClick.Add(() => PlayBossButton(bossCom));
 
     }

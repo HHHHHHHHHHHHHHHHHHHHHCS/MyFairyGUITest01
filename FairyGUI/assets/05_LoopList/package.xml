@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0kqwassy" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="boz60" name="n1.png" path="/" exported="true"/>
+    <image id="boz61" name="n2.png" path="/" exported="true"/>
+    <image id="boz62" name="n3.png" path="/" exported="true"/>
+    <image id="boz63" name="n4.png" path="/" exported="true"/>
+    <image id="boz64" name="n5.png" path="/" exported="true"/>
+    <component id="boz65" name="Button1.xml" path="/"/>
+    <component id="boz66" name="Bg1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="05_LoopList"/>
+</packageDescription>

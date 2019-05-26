@@ -258,11 +258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024553ecf96a65649b929ee08c9214fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  packageName: Package1
+  packageName: 01_HelloWorld
   componentName: Bg3
   fitScreen: 0
   sortingOrder: 0
-  packagePath: FGUI/Package1
+  packagePath: FGUI/01_HelloWorld
   renderMode: 0
   renderCamera: {fileID: 0}
   position: {x: 0, y: 0, z: 0}

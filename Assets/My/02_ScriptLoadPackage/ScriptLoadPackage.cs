@@ -9,8 +9,8 @@ public class ScriptLoadPackage : MonoBehaviour
     void Start()
     {
         GRoot.inst.SetContentScaleFactor(1920, 1080);
-        UIPackage.AddPackage("FGUI/Package1");
-        GComponent component = UIPackage.CreateObject("Package1", "Bg3").asCom;
+        UIPackage.AddPackage("FGUI/01_HelloWorld");
+        GComponent component = UIPackage.CreateObject("01_HelloWorld", "Bg3").asCom;
         GRoot.inst.AddChild(component);
     }
 

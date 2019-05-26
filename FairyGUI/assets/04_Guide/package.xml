@@ -7,5 +7,5 @@
     <movieclip id="kntu3" name="rswcfhd.jta" path="/"/>
     <component id="kntu4" name="Backpack.xml" path="/"/>
   </resources>
-  <publish name="Package4"/>
+  <publish name="04_Guide"/>
 </packageDescription>

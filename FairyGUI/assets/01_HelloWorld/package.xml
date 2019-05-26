@@ -38,5 +38,5 @@
     <component id="jxvy11" name="ComboBox1.xml" path="/" exported="true"/>
     <component id="jxvy12" name="ProgressBar2.xml" path="/"/>
   </resources>
-  <publish name="Package1"/>
+  <publish name="01_HelloWorld"/>
 </packageDescription>

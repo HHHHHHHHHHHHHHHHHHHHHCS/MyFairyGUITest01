@@ -10,5 +10,5 @@
     <component id="l6v96" name="Button1.xml" path="/"/>
     <component id="l6v97" name="Bg1.xml" path="/" exported="true"/>
   </resources>
-  <publish name="Package2"/>
+  <publish name="02_Boss"/>
 </packageDescription>
