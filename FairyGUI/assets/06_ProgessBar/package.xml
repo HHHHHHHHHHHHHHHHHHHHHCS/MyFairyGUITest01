@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="l7tvldmu" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="d5j20" name="b5_png.png" path="/" exported="true"/>
+    <image id="d5j21" name="b6_png.png" path="/" exported="true"/>
+    <image id="d5j22" name="b7(2)_png.png" path="/" exported="true"/>
+    <misc id="d5j23" name="b7_png.lnk" path="/" exported="true"/>
+    <image id="d5j24" name="caiji.png" path="/" exported="true"/>
+    <image id="d5j25" name="caiji2.png" path="/" exported="true"/>
+    <image id="d5j26" name="k20.png" path="/" exported="true"/>
+    <movieclip id="d5j27" name="pet.jta" path="/" exported="true"/>
+    <component id="d5j28" name="Bg1.xml" path="/" exported="true"/>
+    <component id="d5j29" name="ProgressBar1.xml" path="/" exported="true"/>
+    <component id="d5j2a" name="ComboBox1_item.xml" path="/" exported="true"/>
+    <component id="d5j2b" name="ComboBox1_popup.xml" path="/" exported="true"/>
+    <component id="d5j2c" name="ComboBox1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="06_ProgessBar"/>
+</packageDescription>

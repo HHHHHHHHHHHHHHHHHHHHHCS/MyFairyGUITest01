@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,25" extention="ComboBox">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_d5j2" name="n0" src="d5j20" fileName="b5_png.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_d5j2" name="title" xy="1,10" size="66,19" fontSize="30" vAlign="middle" autoSize="none" singleLine="true" text="11">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </text>
+    <image id="n2_d5j2" name="n2" src="d5j22" fileName="b7(2)_png.png" xy="68,5">
+      <relation target="" sidePair="width-width%,height-height%"/>
+      <relation target="" sidePair="right-right%,top-top%"/>
+    </image>
+  </displayList>
+  <ComboBox dropdown="ui://l7tvldmud5j2b"/>
+</component>

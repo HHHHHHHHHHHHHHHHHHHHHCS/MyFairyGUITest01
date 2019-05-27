@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <displayList>
+    <component id="n2_d5j2" name="n2" src="d5j2c" fileName="ComboBox1.xml" xy="922,376" size="376,110" aspect="true">
+      <ComboBox title="设置时间" visibleItemCount="10">
+        <item title="3秒" value="3" icon="ui://l7tvldmud5j2a"/>
+        <item title="10秒" value="10" icon="ui://l7tvldmud5j2a"/>
+      </ComboBox>
+    </component>
+    <component id="n3_d5j2" name="n3" src="d5j29" fileName="ProgressBar1.xml" xy="910,752" size="600,69" aspect="true">
+      <ProgressBar value="100" max="100"/>
+    </component>
+  </displayList>
+</component>
