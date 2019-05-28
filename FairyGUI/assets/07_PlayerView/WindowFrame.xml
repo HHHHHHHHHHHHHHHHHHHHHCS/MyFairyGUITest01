@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,800">
+  <displayList>
+    <image id="n0_ddvn" name="n0" src="ddvn6" fileName="5.png" xy="0,0" size="600,800"/>
+    <component id="n2_ddvn" name="closeButton" src="ddvnd" fileName="Closebutton.xml" xy="484,4" size="64,94"/>
+    <graph id="n5_ddvn" name="dragArea" xy="34,25" size="525,759"/>
+    <image id="n6_ddvn" name="n6" src="ddvn5" fileName="13.png" xy="0,241" size="600,535" aspect="true"/>
+  </displayList>
+</component>
