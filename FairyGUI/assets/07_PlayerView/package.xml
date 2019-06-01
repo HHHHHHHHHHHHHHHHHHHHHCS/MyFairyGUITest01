@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="yemu4jpk" jpegQuality="80" compressPNG="true">
   <resources>
-    <component id="ddvn0" name="Bg1.xml" path="/"/>
-    <image id="ddvn1" name="0.png" path="/"/>
-    <image id="ddvn2" name="10.png" path="/"/>
-    <image id="ddvn3" name="11.png" path="/"/>
-    <image id="ddvn4" name="12.png" path="/"/>
-    <image id="ddvn5" name="13.png" path="/"/>
-    <image id="ddvn6" name="5.png" path="/" scale="9grid" scale9grid="154,146,308,145"/>
-    <image id="ddvn7" name="9.png" path="/"/>
-    <swf id="ddvn8" name="qtm01d.swf" path="/"/>
-    <image id="ddvn9" name="r3.png" path="/"/>
-    <component id="ddvna" name="ButtonOpenn.xml" path="/"/>
-    <component id="ddvnb" name="PlayerWindow.xml" path="/"/>
-    <component id="ddvnc" name="WindowFrame.xml" path="/"/>
-    <component id="ddvnd" name="Closebutton.xml" path="/"/>
-    <component id="ddvng" name="rightButton.xml" path="/"/>
-    <component id="ddvnh" name="leftButton.xml" path="/"/>
+    <component id="ddvn0" name="Bg1.xml" path="/" exported="true"/>
+    <image id="ddvn1" name="0.png" path="/" exported="true"/>
+    <image id="ddvn2" name="10.png" path="/" exported="true"/>
+    <image id="ddvn3" name="11.png" path="/" exported="true"/>
+    <image id="ddvn4" name="12.png" path="/" exported="true"/>
+    <image id="ddvn5" name="13.png" path="/" exported="true"/>
+    <image id="ddvn6" name="5.png" path="/" exported="true" scale="9grid" scale9grid="154,146,308,145"/>
+    <image id="ddvn7" name="9.png" path="/" exported="true"/>
+    <swf id="ddvn8" name="qtm01d.swf" path="/" exported="true"/>
+    <image id="ddvn9" name="r3.png" path="/" exported="true"/>
+    <component id="ddvna" name="ButtonOpenn.xml" path="/" exported="true"/>
+    <component id="ddvnb" name="PlayerWindow.xml" path="/" exported="true"/>
+    <component id="ddvnc" name="WindowFrame.xml" path="/" exported="true"/>
+    <component id="ddvnd" name="Closebutton.xml" path="/" exported="true"/>
+    <component id="ddvng" name="rightButton.xml" path="/" exported="true"/>
+    <component id="ddvnh" name="leftButton.xml" path="/" exported="true"/>
   </resources>
-  <publish name=""/>
+  <publish name="07_PlayerView"/>
 </packageDescription>
