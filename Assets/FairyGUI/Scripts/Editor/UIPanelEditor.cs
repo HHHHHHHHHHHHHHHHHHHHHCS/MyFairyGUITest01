@@ -149,7 +149,7 @@ namespace FairyGUIEditor
 #if UNITY_2017_1_OR_NEWER
 			Vector3 newPos = Handles.FreeMoveHandle(pos, Quaternion.identity, sizeFactor, Vector3.one, Handles.ArrowHandleCap);
 #else
-			Vector3 newPos = Handles.FreeMoveHandle(pos, Quaternion.identity, sizeFactor, Vector3.one, Handles.ArrowCap);
+			Vector3 newPos = Handles.FreeMoveHandle(_pos, Quaternion.identity, sizeFactor, Vector3.one, Handles.ArrowCap);
 #endif
 			if (newPos != pos)
 			{

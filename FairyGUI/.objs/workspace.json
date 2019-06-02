@@ -1,4 +1,13 @@
 {
+	"hidden_packages": [],
+	"active_doc": [
+		"yemu4jpk",
+		"ddvnb"
+	],
+	"expanded_nodes": [
+		"yemu4jpk",
+		"/"
+	],
 	"docs": [
 		"yemu4jpk",
 		"ddvn0",
@@ -8,14 +17,5 @@
 		"ddvnb",
 		"yemu4jpk",
 		"ddvnc"
-	],
-	"hidden_packages": [],
-	"active_doc": [
-		"yemu4jpk",
-		"ddvn0"
-	],
-	"expanded_nodes": [
-		"yemu4jpk",
-		"/"
 	]
 }

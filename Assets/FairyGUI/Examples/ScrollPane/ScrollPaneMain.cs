@@ -34,7 +34,7 @@ public class ScrollPaneMain : MonoBehaviour
 	{
 		GButton item = obj.asButton;
 		item.title = "Item " + index;
-		item.scrollPane.posX = 0; //reset scroll pos
+		item.scrollPane.posX = 0; //reset scroll _pos
 
 		//Be carefull, RenderListItem is calling repeatedly, dont call 'Add' here!
 		//请注意，RenderListItem是重复调用的，不要使用Add增加侦听！

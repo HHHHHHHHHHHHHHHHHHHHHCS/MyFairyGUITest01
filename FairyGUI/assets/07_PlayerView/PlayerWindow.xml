@@ -3,7 +3,7 @@
   <displayList>
     <component id="n2_ddvn" name="frame" src="ddvnc" fileName="WindowFrame.xml" xy="0,0"/>
     <graph id="n4_ddvn" name="n4" xy="100,100" size="400,600"/>
-    <component id="n5_ddvn" name="n5" src="ddvnh" fileName="leftButton.xml" xy="460,420" size="64,64"/>
-    <component id="n6_ddvn" name="n6" src="ddvng" fileName="rightButton.xml" xy="93,420" size="64,64"/>
+    <component id="n5_ddvn" name="leftButton" src="ddvnh" fileName="leftButton.xml" xy="460,420" size="64,64"/>
+    <component id="n6_ddvn" name="rightButton" src="ddvng" fileName="rightButton.xml" xy="93,420" size="64,64"/>
   </displayList>
 </component>
