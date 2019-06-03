@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="kdwruxyb" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="m6a90" name="Main.xml" path="/"/>
+    <component id="m6a91" name="BagWindow.xml" path="/"/>
+    <image id="m6a92" name="0.png" path="/"/>
+    <image id="m6a93" name="1.png" path="/"/>
+    <image id="m6a94" name="2.png" path="/"/>
+    <image id="m6a95" name="3.png" path="/"/>
+    <image id="m6a96" name="4.png" path="/"/>
+    <image id="m6a97" name="5.png" path="/"/>
+    <image id="m6a98" name="8.png" path="/"/>
+    <image id="m6a99" name="btnimage.png" path="/"/>
+    <image id="m6a9a" name="i0.png" path="/"/>
+    <image id="m6a9b" name="i1.png" path="/"/>
+    <image id="m6a9c" name="i2.png" path="/"/>
+    <image id="m6a9d" name="i3.png" path="/"/>
+    <image id="m6a9e" name="i4.png" path="/"/>
+    <image id="m6a9f" name="i5.png" path="/"/>
+    <image id="m6a9g" name="i6.png" path="/"/>
+    <image id="m6a9h" name="i7.png" path="/"/>
+    <image id="m6a9i" name="i8.png" path="/"/>
+    <image id="m6a9j" name="i9.png" path="/"/>
+    <movieclip id="m6a9k" name="quan.jta" path="/"/>
+    <component id="m6a9l" name="WindowFrame.xml" path="/"/>
+    <component id="m6a9n" name="buttonClose.xml" path="/"/>
+    <component id="m6a9o" name="Item.xml" path="/"/>
+    <component id="m6a9p" name="ItemView.xml" path="/"/>
+    <component id="m6a9q" name="BagButton.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
