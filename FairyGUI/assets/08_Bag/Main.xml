@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1920,1080">
   <displayList>
-    <component id="n0_m6a9" name="n0" src="m6a9q" fileName="BagButton.xml" xy="1600,786" size="200,200"/>
-    <movieclip id="n1_m6a9" name="n1" src="m6a9k" fileName="quan.jta" xy="1607,788" size="200,200"/>
+    <component id="n0_m6a9" name="bagButton" src="m6a9q" fileName="BagButton.xml" xy="1600,787" size="200,200"/>
+    <movieclip id="n1_m6a9" name="n1" src="m6a9k" fileName="quan.jta" xy="1610,790" size="200,200">
+      <relation target="n0_m6a9" sidePair="center-center,middle-middle"/>
+    </movieclip>
+    <component id="n3_njr9" name="playerView" src="m6a9p" fileName="ItemView.xml" xy="195,820"/>
   </displayList>
 </component>
