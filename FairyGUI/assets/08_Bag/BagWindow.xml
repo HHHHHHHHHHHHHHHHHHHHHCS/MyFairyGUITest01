@@ -2,7 +2,7 @@
 <component size="615,387">
   <displayList>
     <component id="n0_m6a9" name="frame" src="m6a9l" fileName="WindowFrame.xml" xy="0,0"/>
-    <list id="n2_m6a9" name="n2" xy="51,56" size="503,289" layout="flow_hz" overflow="scroll" defaultItem="ui://kdwruxybm6a9o" autoClearItems="true">
+    <list id="n2_m6a9" name="itemList" xy="51,56" size="503,289" layout="flow_hz" overflow="scroll" defaultItem="ui://kdwruxybm6a9o" autoClearItems="true">
       <item/>
       <item/>
       <item/>

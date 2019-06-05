@@ -15,13 +15,14 @@ public class Bag : MonoBehaviour
         mainUI = GetComponent<UIPanel>().ui;
         playerView = mainUI.GetChild("playerView").asButton;
         playerView.onClick.Add(UseItem);
-        bagWindow = new MyBagWindow();
-        //bagWindow.SetXY();
+        bagWindow = new MyBagWindow(playerView);
+        bagWindow.SetXY(200,300);
         mainUI.GetChild("bagButton").onClick.Add(bagWindow.Show);
     }
 
     private void UseItem()
     {
-
+        playerView.icon = null;
+        playerView.title = "空白";
     }
 }
