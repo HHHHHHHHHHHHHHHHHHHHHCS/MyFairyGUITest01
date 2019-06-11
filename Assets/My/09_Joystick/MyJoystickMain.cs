@@ -1,18 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using FairyGUI;
 using UnityEngine;
 
 public class MyJoystickMain : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private GComponent mainUI;
+    private GTextField gTextField;
+    private MyJoystick joystick;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Start()
     {
-        
+        mainUI = GetComponent<UIPanel>().ui;
+        gTextField = mainUI.GetChild("n4").asTextField;
+        joystick = new MyJoystick(mainUI);
     }
 }

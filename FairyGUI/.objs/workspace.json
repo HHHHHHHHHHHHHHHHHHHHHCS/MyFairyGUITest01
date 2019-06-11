@@ -1,13 +1,4 @@
 {
-	"hidden_packages": [],
-	"active_doc": [
-		"ap2e2lfi",
-		"vnst3"
-	],
-	"expanded_nodes": [
-		"ap2e2lfi",
-		"/"
-	],
 	"docs": [
 		"kdwruxyb",
 		"m6a90",
@@ -21,5 +12,14 @@
 		"vnst0",
 		"ap2e2lfi",
 		"vnst3"
+	],
+	"hidden_packages": [],
+	"active_doc": [
+		"ap2e2lfi",
+		"vnst3"
+	],
+	"expanded_nodes": [
+		"ap2e2lfi",
+		"/"
 	]
 }
