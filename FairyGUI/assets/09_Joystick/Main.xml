@@ -7,10 +7,10 @@
     <image id="n2_vnst" name="JoystickCenter" src="vnst1" fileName="0.png" xy="235,790">
       <relation target="" sidePair="top-top%,bottom-bottom%"/>
     </image>
-    <graph id="n0_vnst" name="JoyStickArea" xy="70,625" size="400,400">
+    <graph id="n0_vnst" name="JoystickArea" xy="70,625" size="400,400" alpha="0" type="rect" fillColor="#ff000000">
       <relation target="" sidePair="top-top%,bottom-bottom%"/>
     </graph>
-    <text id="n3_vnst" name="DegreeText" xy="1243,123" size="220,71" fontSize="60" text="Degree:"/>
+    <text id="n3_vnst" name="DegreeText" xy="1243,123" size="217,71" fontSize="60" text="Degree:"/>
     <text id="n4_vnst" name="n4" xy="1443,123" size="10,71" fontSize="60" text=""/>
   </displayList>
 </component>

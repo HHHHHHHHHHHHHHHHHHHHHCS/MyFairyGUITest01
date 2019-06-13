@@ -11,7 +11,7 @@ public class MyJoystickMain : MonoBehaviour
     private MyJoystick joystick;
 
 
-    private void Start()
+    private void Awake()
     {
         mainUI = GetComponent<UIPanel>().ui;
         gTextField = mainUI.GetChild("n4").asTextField;

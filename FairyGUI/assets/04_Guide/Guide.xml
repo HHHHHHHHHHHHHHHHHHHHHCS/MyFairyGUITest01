@@ -8,7 +8,7 @@
     <graph id="n3_kntu" name="n3" xy="1700,750" size="220,200" group="n8_kntu" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
     <graph id="n5_kntu" name="n5" xy="1500,950" size="420,130" group="n8_kntu" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
     <movieclip id="n6_kntu" name="n6" src="kntu2" fileName="quan.jta" xy="1475,725" size="250,250" group="n8_kntu"/>
-    <group id="n8_kntu" name="n8" xy="0,0" size="1920,1080" advanced="true" collapsed="true">
+    <group id="n8_kntu" name="n8" xy="0,0" size="1920,1080" advanced="true">
       <gearDisplay controller="c1" pages="1"/>
     </group>
     <movieclip id="n7_kntu" name="n7" src="kntu3" fileName="rswcfhd.jta" xy="-271,100" size="193,120" aspect="true">
