@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1920,1080">
   <displayList>
-    <component id="n1_vnst" name="Joystick" src="vnst3" fileName="Circle.xml" xy="115,675" size="315,311">
-      <relation target="" sidePair="top-top%,bottom-bottom%"/>
-    </component>
     <image id="n2_vnst" name="JoystickCenter" src="vnst1" fileName="0.png" xy="235,790">
-      <relation target="" sidePair="top-top%,bottom-bottom%"/>
+      <relation target="" sidePair="top-top,bottom-bottom"/>
     </image>
+    <component id="n5_nfhi" name="Joystick" src="nfhi7" fileName="Circle.xml" xy="172,723">
+      <relation target="" sidePair="bottom-bottom,height-height"/>
+    </component>
     <graph id="n0_vnst" name="JoystickArea" xy="70,625" size="400,400" alpha="0" type="rect" fillColor="#ff000000">
-      <relation target="" sidePair="top-top%,bottom-bottom%"/>
+      <relation target="" sidePair="top-top,bottom-bottom"/>
     </graph>
     <text id="n3_vnst" name="DegreeText" xy="1243,123" size="217,71" fontSize="60" text="Degree:"/>
-    <text id="n4_vnst" name="n4" xy="1443,123" size="10,71" fontSize="60" text=""/>
+    <text id="n4_vnst" name="n4" xy="1463,123" size="124,71" fontSize="60" autoClearText="true" text="-180"/>
   </displayList>
 </component>

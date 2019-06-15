@@ -4,7 +4,7 @@
     <component id="vnst0" name="Main.xml" path="/" exported="true"/>
     <image id="vnst1" name="0.png" path="/" exported="true"/>
     <image id="vnst2" name="1.png" path="/" exported="true"/>
-    <component id="vnst3" name="Circle.xml" path="/" exported="true"/>
+    <component id="nfhi7" name="Circle.xml" path="/" exported="true"/>
   </resources>
   <publish name="09_Joystick"/>
 </packageDescription>

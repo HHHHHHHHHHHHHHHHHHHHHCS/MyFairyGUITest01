@@ -26,7 +26,7 @@ public class MyJoystick : EventDispatcher
     private float lastStageY;
     private int touchID;
     public float radius { get; set; }
-    private Tweener tweener;
+    private GTweener tweener;
 
     public MyJoystick(GComponent mainUI)
     {
@@ -53,8 +53,6 @@ public class MyJoystick : EventDispatcher
     {
         if (touchID == -1)
         {
-
-
             var input = context.inputEvent;
             touchID = input.touchId;
 
@@ -81,18 +79,80 @@ public class MyJoystick : EventDispatcher
 
             float deltaX = posX - initX;
             float deltaY = posY - initY;
-            float degrees = Mathf.Atan2(deltaY, deltaX)*Mathf.Rad2Deg;
+            float degrees = Mathf.Atan2(deltaY, deltaX) * Mathf.Rad2Deg;
             thumb.rotation = degrees;
-            context.CaptureTouch();//捕获触摸 继续往下传递
+            context.CaptureTouch(); //捕获触摸 继续往下传递
         }
     }
 
 
     public void OnTouchMove(EventContext context)
     {
+        InputEvent inputEvent = context.inputEvent;
+        if (touchID != -1 && inputEvent.touchId == touchID)
+        {
+            Vector2 localPos = GRoot.inst.GlobalToLocal(new Vector2(inputEvent.x, inputEvent.y));
+            float posX = localPos.x;
+            float posY = localPos.y;
+            float moveX = posX - lastStageX;
+            float moveY = posY - lastStageY;
+
+            lastStageX = posX;
+            lastStageY = posY;
+            float buttonX = joystickButton.x + moveX;
+            float buttonY = joystickButton.y + moveY;
+
+            float deltaX = buttonX + joystickButton.width / 2 - startStageX;
+            float deltaY = buttonY + joystickButton.height / 2 - startStageY;
+
+            float rad = Mathf.Atan2(deltaY, deltaX);
+            float degree = rad * Mathf.Rad2Deg;
+            thumb.rotation = degree + 90;
+
+            //设置范围
+            float maxX = radius * Mathf.Cos(rad);
+            float maxY = radius * Mathf.Sin(rad);
+            if (Mathf.Abs(deltaX) > Mathf.Abs(maxX))
+            {
+                deltaX = maxX;
+            }
+
+            if (Mathf.Abs(deltaY) > Mathf.Abs(maxY))
+            {
+                deltaY = maxY;
+            }
+
+            buttonX = startStageX + deltaX;
+            buttonY = startStageY + deltaY;
+
+            joystickButton.SetXY(buttonX - joystickButton.width / 2, buttonY - joystickButton.height / 2);
+
+            OnMove.Call(degree); //执行回调方法
+        }
     }
 
     public void OnTouchEnd(EventContext context)
     {
+        InputEvent inputEvent = context.inputEvent;
+        if (touchID != -1 && inputEvent.touchId == touchID)
+        {
+            touchID = -1;
+            thumb.rotation = thumb.rotation + 270;
+            center.visible = false;
+
+            tweener = joystickButton
+                .TweenMove(new Vector2(initX - joystickButton.width / 2, initY - joystickButton.height / 2), 0.3f)
+                .OnComplete(
+                    _ =>
+                    {
+                        tweener = null;
+                        joystickButton.selected = false;
+                        thumb.rotation = 0;
+                        center.visible = true;
+                        center.SetXY(initX - center.width / 2, initY - center.height / 2);
+                    });
+
+            OnEnd.Call(); //执行回调方法
+        }
     }
 }

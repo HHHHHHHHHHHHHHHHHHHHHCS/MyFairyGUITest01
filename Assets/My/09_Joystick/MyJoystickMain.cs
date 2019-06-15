@@ -16,5 +16,19 @@ public class MyJoystickMain : MonoBehaviour
         mainUI = GetComponent<UIPanel>().ui;
         gTextField = mainUI.GetChild("n4").asTextField;
         joystick = new MyJoystick(mainUI);
+
+        joystick.OnMove.Add(OnMoveCallBack);
+        joystick.OnEnd.Add(OnEndCallBack);
+    }
+
+    private void OnMoveCallBack(EventContext context)
+    {
+        float degree = (float) context.data;
+        gTextField.text = degree.ToString();
+    }
+
+    private void OnEndCallBack()
+    {
+        gTextField.text = "";
     }
 }
