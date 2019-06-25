@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/My/10_TwoFinger/10_TwoFinger.unity
+    guid: b3e383dbc4b1c29459b16dadf0a39909
   m_configObjects: {}
