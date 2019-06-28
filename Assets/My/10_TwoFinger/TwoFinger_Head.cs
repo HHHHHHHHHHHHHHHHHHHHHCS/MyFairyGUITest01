@@ -56,8 +56,6 @@ public class TwoFinger_Head : MonoBehaviour
     {
         var pg = context.sender as MyPinchGesture;
 
-
-
         if (pn == 2 && p32Scale <= 0.25f)
         {
             pn = 1;
@@ -68,13 +66,11 @@ public class TwoFinger_Head : MonoBehaviour
 
         lastP32Scale = p32Scale;
         lastP21Scale = p21Scale;
-
     }
 
     private void OnMove(EventContext context)
     {
         var pg = context.sender as MyPinchGesture;
-
         float t = 0f;
         const float constVal = 1;
         Transform startTarget = null, endTarget = null;
@@ -82,7 +78,7 @@ public class TwoFinger_Head : MonoBehaviour
 
         if (pn == 3 || pn == 2)
         {
-            p32Scale = Mathf.Clamp(lastP32Scale * (1f / pg.scale), 0.01f, 1f);
+            p32Scale = Mathf.Clamp(p32Scale + lastP32Scale * (pg.delta), 0.01f, 1f);
             pn = p32Scale == 1 ? 3 : 2;
             t = p32Scale / constVal;
             startTarget = nearPos;
@@ -90,7 +86,7 @@ public class TwoFinger_Head : MonoBehaviour
         }
         else if (pn == 1)
         {
-            p21Scale = Mathf.Clamp(lastP21Scale * (1f / pg.scale), 0.01f, 5f);
+            p21Scale = Mathf.Clamp(p21Scale + lastP21Scale * (pg.delta), 0.01f, 5f);
             if (p21Scale > constVal)
             {
                 t = p21Scale / 5;

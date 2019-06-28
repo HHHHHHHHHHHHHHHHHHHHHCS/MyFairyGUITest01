@@ -21,8 +21,6 @@ public class TwoFinger_New : MonoBehaviour
     private float p32Scale = 1, p21Scale = 1;
     private Camera mainCamera;
 
-    public Dictionary<string, Action> aa = new Dictionary<string, Action>();
-
     void Start()
     {
         MyPinchGesture pg = new MyPinchGesture(GRoot.inst);

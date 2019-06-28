@@ -76,6 +76,14 @@ public class MyPinchGesture : EventDispatcher
         {
             if (host == GRoot.inst)
             {
+#if UNITY_EDITOR
+                if (Application.platform == RuntimePlatform.WindowsEditor)
+                {
+                    Stage.inst.onMouseWheel.Add(__mouseWheel);
+                    Stage.inst.onKeyDown.Add(__altDown);
+                    Stage.inst.onKeyUp.Add(__altUp);
+                }
+#endif
                 Stage.inst.onTouchBegin.Add(__touchBegin);
                 Stage.inst.onTouchMove.Add(__touchMove);
                 Stage.inst.onTouchEnd.Add(__touchEnd);
@@ -93,6 +101,13 @@ public class MyPinchGesture : EventDispatcher
             _touchBegan = false;
             if (host == GRoot.inst)
             {
+#if UNITY_EDITOR
+                if (Application.platform == RuntimePlatform.WindowsEditor)
+                {
+                    Stage.inst.onMouseWheel.Remove(__mouseWheel);
+                }
+#endif
+
                 Stage.inst.onTouchBegin.Remove(__touchBegin);
                 Stage.inst.onTouchMove.Remove(__touchMove);
                 Stage.inst.onTouchEnd.Remove(__touchEnd);
@@ -108,35 +123,6 @@ public class MyPinchGesture : EventDispatcher
 
     void __touchBegin(EventContext context)
     {
-#if UNITY_EDITOR
-        if (Stage.inst.touchCount == 1 && Application.platform == RuntimePlatform.WindowsEditor
-                                       && Input.GetKey(KeyCode.LeftAlt))
-        {
-            if (!_started && !_touchBegan)
-            {
-                _touchBegan = true;
-                Stage.inst.GetAllTouch(_touches);
-                center = host.GlobalToLocal(Stage.inst.GetTouchPosition(_touches[0]));
-                _startDistance = 0;
-                context.CaptureTouch();
-
-                if (!_started)
-                {
-                    _started = true;
-                    scale = 1;
-                    _lastScale = 1;
-                    delta = 0;
-
-
-                    InputEvent input = context.inputEvent;
-                    onBegin.Call(input);
-                }
-
-                return;
-            }
-        }
-#endif
-
         if (Stage.inst.touchCount == 2)
         {
             if (!_started && !_touchBegan)
@@ -163,37 +149,68 @@ public class MyPinchGesture : EventDispatcher
         }
     }
 
-    void __touchMove(EventContext context)
-    {
 #if UNITY_EDITOR
-        if (Application.platform == RuntimePlatform.WindowsEditor)
+    void __altDown(EventContext context)
+    {
+        if (context.inputEvent.keyCode == KeyCode.LeftAlt)
         {
-            if (!_touchBegan || Stage.inst.touchCount != 1)
-                return;
-
-            InputEvent input = context.inputEvent;
-
-            if (!input.alt)
-                return;
-
-            if (_started)
+            if (!_started && !_touchBegan)
             {
-                if (input.ctrl)
-                    delta = 0.1f / 1f;
-                else if (input.shift)
-                    delta = -0.1f / 1f;
-                else
-                    return;
-                _lastScale = scale;
-                scale = Mathf.Max(0.1f, scale + delta);
+                _touchBegan = true;
+                Stage.inst.GetAllTouch(_touches);
+                center = host.GlobalToLocal(Stage.inst.GetTouchPosition(_touches[0]));
+                _startDistance = 0;
+                context.CaptureTouch();
 
-                onAction.Call(input);
+                if (!_started)
+                {
+                    _started = true;
+                    scale = 1;
+                    _lastScale = 1;
+                    delta = 0;
+
+
+                    InputEvent input = context.inputEvent;
+                    onBegin.Call(input);
+                }
             }
-
-            return;
         }
+    }
 #endif
 
+#if UNITY_EDITOR
+    void __altUp(EventContext context)
+    {
+        if (context.inputEvent.keyCode == KeyCode.LeftAlt)
+        {
+            _touchBegan = false;
+            if (_started)
+            {
+                _started = false;
+                onEnd.Call(context.inputEvent);
+            }
+        }
+    }
+#endif
+
+#if UNITY_EDITOR
+    void __mouseWheel(EventContext context)
+    {
+        if (_started)
+        {
+            InputEvent input = context.inputEvent;
+
+            _lastScale = scale;
+            delta = -input.mouseWheelDelta / 30f;
+            scale = Mathf.Max(0.1f, scale + delta);
+            onAction.Call(input);
+        }
+    }
+#endif
+
+
+    void __touchMove(EventContext context)
+    {
         if (!_touchBegan || Stage.inst.touchCount != 2)
             return;
 
@@ -202,11 +219,10 @@ public class MyPinchGesture : EventDispatcher
         pt2 = host.GlobalToLocal(Stage.inst.GetTouchPosition(_touches[1]));
         float dist = Vector2.Distance(pt1, pt2);
 
-
         if (_started)
         {
             float ss = dist / _startDistance;
-            delta = (ss - _lastScale)/1f;
+            delta = (ss - _lastScale) / 1f;
             _lastScale = ss;
             scale += delta;
             onAction.Call(evt);

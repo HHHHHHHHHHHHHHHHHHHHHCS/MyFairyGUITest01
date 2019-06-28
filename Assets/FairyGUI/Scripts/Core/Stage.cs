@@ -659,9 +659,17 @@ namespace FairyGUI
 			{
 				TouchInfo touch = _touches[0];
 				touch.modifiers = evt.modifiers;
-			}
+#if UNITY_EDITOR
+                touch.keyCode = evt.keyCode;
+                DisplayObject f = this.focus;
+                if (f != null)
+                    f.BubbleEvent("onKeyUp", touch.evt);
+                else
+                    DispatchEvent("onKeyUp", touch.evt);
+#endif
+            }
 #if UNITY_2017_1_OR_NEWER
-			else if (evt.type == EventType.ScrollWheel)
+            else if (evt.type == EventType.ScrollWheel)
 #else
 			else if (evt.type == EventType.scrollWheel)
 #endif
