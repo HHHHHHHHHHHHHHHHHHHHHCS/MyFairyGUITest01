@@ -77,12 +77,10 @@ public class MyPinchGesture : EventDispatcher
             if (host == GRoot.inst)
             {
 #if UNITY_EDITOR
-                if (Application.platform == RuntimePlatform.WindowsEditor)
-                {
-                    Stage.inst.onMouseWheel.Add(__mouseWheel);
-                    Stage.inst.onKeyDown.Add(__altDown);
-                    Stage.inst.onKeyUp.Add(__altUp);
-                }
+
+                Stage.inst.onMouseWheel.Add(__mouseWheel);
+                Stage.inst.onKeyDown.Add(__altDown);
+                Stage.inst.onKeyUp.Add(__altUp);
 #endif
                 Stage.inst.onTouchBegin.Add(__touchBegin);
                 Stage.inst.onTouchMove.Add(__touchMove);
@@ -90,6 +88,13 @@ public class MyPinchGesture : EventDispatcher
             }
             else
             {
+#if UNITY_EDITOR
+
+               host.onMouseWheel.Add(__mouseWheel);
+               host.onKeyDown.Add(__altDown);
+               host.onKeyUp.Add(__altUp);
+#endif
+
                 host.onTouchBegin.Add(__touchBegin);
                 host.onTouchMove.Add(__touchMove);
                 host.onTouchEnd.Add(__touchEnd);
@@ -102,10 +107,9 @@ public class MyPinchGesture : EventDispatcher
             if (host == GRoot.inst)
             {
 #if UNITY_EDITOR
-                if (Application.platform == RuntimePlatform.WindowsEditor)
-                {
-                    Stage.inst.onMouseWheel.Remove(__mouseWheel);
-                }
+                Stage.inst.onMouseWheel.Remove(__mouseWheel);
+                Stage.inst.onKeyDown.Remove(__altDown);
+                Stage.inst.onKeyUp.Remove(__altUp);
 #endif
 
                 Stage.inst.onTouchBegin.Remove(__touchBegin);
@@ -114,6 +118,11 @@ public class MyPinchGesture : EventDispatcher
             }
             else
             {
+#if UNITY_EDITOR
+                host.onMouseWheel.Remove(__mouseWheel);
+                host.onKeyDown.Remove(__altDown);
+                host.onKeyUp.Remove(__altUp);
+#endif
                 host.onTouchBegin.Remove(__touchBegin);
                 host.onTouchMove.Remove(__touchMove);
                 host.onTouchEnd.Remove(__touchEnd);

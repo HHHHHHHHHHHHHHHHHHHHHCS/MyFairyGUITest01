@@ -128,7 +128,7 @@ namespace FairyGUI
 		EventListener _onAddedToStage;
 		EventListener _onRemovedFromStage;
 		EventListener _onKeyDown;
-		EventListener _onClickLink;
+        EventListener _onClickLink;
 		EventListener _onPositionChanged;
 		EventListener _onSizeChanged;
 		EventListener _onDragStart;
@@ -136,7 +136,12 @@ namespace FairyGUI
 		EventListener _onDragEnd;
 		EventListener _onGearStop;
 
-		internal protected bool underConstruct;
+#if UNITY_EDITOR
+        EventListener _onMouseWheel;
+        EventListener _onKeyUp;
+#endif
+
+        internal protected bool underConstruct;
 		internal float _width;
 		internal float _height;
 		internal float _rawWidth;
@@ -246,10 +251,31 @@ namespace FairyGUI
 			get { return _onKeyDown ?? (_onKeyDown = new EventListener(this, "onKeyDown")); }
 		}
 
-		/// <summary>
-		/// Dispatched when links in the object or its child was clicked.
-		/// </summary>
-		public EventListener onClickLink
+
+#if UNITY_EDITOR
+        /// <summary>
+        /// Dispatched on key pressed when the object is in focus.
+        /// </summary>
+        public EventListener onKeyUp
+        {
+            get { return _onKeyUp ?? (_onKeyUp = new EventListener(this, "onKeyUp")); }
+        }
+#endif
+
+#if UNITY_EDITOR
+        /// <summary>
+        /// 
+        /// </summary>
+        public EventListener onMouseWheel
+        {
+            get { return _onMouseWheel ?? (_onMouseWheel = new EventListener(this, "onMouseWheel")); }
+        }
+#endif
+
+        /// <summary>
+        /// Dispatched when links in the object or its child was clicked.
+        /// </summary>
+        public EventListener onClickLink
 		{
 			get { return _onClickLink ?? (_onClickLink = new EventListener(this, "onClickLink")); }
 		}

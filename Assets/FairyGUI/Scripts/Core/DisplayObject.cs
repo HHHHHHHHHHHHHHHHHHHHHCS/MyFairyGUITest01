@@ -80,10 +80,11 @@ namespace FairyGUI
 		EventListener _onAddedToStage;
 		EventListener _onRemovedFromStage;
 		EventListener _onKeyDown;
+        EventListener _onClickLink;
+
 #if UNITY_EDITOR
         EventListener _onKeyUp;
 #endif
-        EventListener _onClickLink;
 
 		protected EventCallback0 _captureDelegate; //缓存这个delegate，可以防止Capture状态下每帧104B的GC
 		protected int _paintingMode; //1-滤镜，2-blendMode，4-transformMatrix, 8-cacheAsBitmap
